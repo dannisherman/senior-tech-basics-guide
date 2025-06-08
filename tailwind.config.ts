@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'gentle-pulse': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.8'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'gentle-pulse': 'gentle-pulse 2s ease-in-out infinite'
+			},
+			fontSize: {
+				'senior-sm': ['18px', '1.6'],
+				'senior-base': ['20px', '1.7'],
+				'senior-lg': ['24px', '1.7'],
+				'senior-xl': ['28px', '1.6'],
+				'senior-2xl': ['32px', '1.5'],
+				'senior-3xl': ['40px', '1.4'],
+				'senior-4xl': ['48px', '1.3']
 			}
 		}
 	},
